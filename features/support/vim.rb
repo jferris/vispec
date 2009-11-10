@@ -31,6 +31,7 @@ class Vim < Vi
       exec("mvim --servername vispec-server")
     end
     Process.wait(pid)
+    sleep(0.5)
   end
 
   def kill_vim_server
